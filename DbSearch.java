@@ -23,7 +23,7 @@ class DbSearch {
 	    	// このメソッドでSELECT文を送ると、データベースを検索した結果の入ったリザルトセットというオブジェクトが帰ってくる。
             ResultSet rs = stmt.executeQuery(mySql);
 
-	    System.out.println("");
+	    System.out.println();
             System.out.println("date" +"\t\t\tsite"+"\t\t"+ "title");
             System.out.println("------------------------------------------");
 
