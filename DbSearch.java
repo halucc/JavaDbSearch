@@ -7,26 +7,27 @@ class DbSearch {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-            System.out.println("ƒ^ƒCƒgƒ‹‚ğ“ü—Í‚µ‚Ä‰º‚³‚¢");
+            System.out.println("ã‚¿ã‚¤ãƒˆãƒ«ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„");
             String str = br.readLine();
 
-            // 1.ƒRƒlƒNƒVƒ‡ƒ“
+            // 1.ã‚³ãƒã‚¯ã‚·ãƒ§ãƒ³
             Connection con = DbConnect.getConnection();
-            // 2.ƒXƒe[ƒgƒƒ“ƒgƒIƒuƒWƒFƒNƒgì¬
+            // 2.ã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä½œæˆ
             Statement stmt = con.createStatement();
 
-            //SQL•¶
+            //SQLæ–‡
             String mySql = "SELECT title,date, 'YahooJapan' AS site_name FROM test_news1 WHERE title LIKE " + "'%" + str + "%' ORDER BY date DESC LIMIT 50";
             
-            // 3.ƒŠƒUƒ‹ƒgƒZƒbƒgiSQL•¶Àsj
-	    	// executeQuery()ƒƒ\ƒbƒh
-	    	// ‚±‚Ìƒƒ\ƒbƒh‚ÅSELECT•¶‚ğ‘—‚é‚ÆAƒf[ƒ^ƒx[ƒX‚ğŒŸõ‚µ‚½Œ‹‰Ê‚Ì“ü‚Á‚½ƒŠƒUƒ‹ƒgƒZƒbƒg‚Æ‚¢‚¤ƒIƒuƒWƒFƒNƒg‚ª‹A‚Á‚Ä‚­‚éB
+            // 3.ãƒªã‚¶ãƒ«ãƒˆã‚»ãƒƒãƒˆï¼ˆSQLæ–‡å®Ÿè¡Œï¼‰
+	    	// executeQuery()ãƒ¡ã‚½ãƒƒãƒ‰
+	    	// ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰ã§SELECTæ–‡ã‚’é€ã‚‹ã¨ã€ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã‚’æ¤œç´¢ã—ãŸçµæœã®å…¥ã£ãŸãƒªã‚¶ãƒ«ãƒˆã‚»ãƒƒãƒˆã¨ã„ã†ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒå¸°ã£ã¦ãã‚‹ã€‚
             ResultSet rs = stmt.executeQuery(mySql);
 
+	    System.out.println("");
             System.out.println("date" +"\t\t\tsite"+"\t\t"+ "title");
             System.out.println("------------------------------------------");
 
-            // ƒŠƒUƒ‹ƒgƒZƒbƒg‚©‚çƒf[ƒ^æ“¾
+            // ãƒªã‚¶ãƒ«ãƒˆã‚»ãƒƒãƒˆã‹ã‚‰ãƒ‡ãƒ¼ã‚¿å–å¾—
             while (rs.next()) {
                 String date = rs.getString("date");
                 String title = rs.getString("title");
@@ -38,13 +39,13 @@ class DbSearch {
 
             System.out.println("------------------------------------------");
 
-            // ƒŠƒ\[ƒX‰ğ•ú
+            // ãƒªã‚½ãƒ¼ã‚¹è§£æ”¾
             rs.close();
             stmt.close();
             con.close();
 
         } catch (Exception e) {
-            System.out.println("ƒGƒ‰[‚Å‚·F" + e );
+            System.out.println("ã‚¨ãƒ©ãƒ¼ã§ã™ï¼š" + e );
         }
     }
 }
