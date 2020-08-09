@@ -1,4 +1,5 @@
 # JavaMySQLSearch
+ドキュメント（仮）
 
 # 使用例
 #### Windows(PowerShell)
@@ -18,4 +19,5 @@
 # SQL文解説
 
 # ToDo
+- 設定ファイルの外部ファイル化
 
