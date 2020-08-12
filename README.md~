@@ -19,16 +19,6 @@
 
 ## Linux(CentOS)
 
-# コンパイル
-```Java
-//コンパイル
-javac DbSearch.java
-```
-```Java
-//実行
-java DbSearch
-```
-
 # 使用例
 #### Windows(PowerShell)
 ![hoge](image/search01.png)
