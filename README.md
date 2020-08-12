@@ -10,7 +10,8 @@
 .(ドット);（セミコロン）[フルパス];（セミコロン）
 
 .;E:\!mysql20200520\mysql-connector-java-5.1.43-bin.jar;
-
+```
+```
 //jarファイルは任意の場所に置いてください
 //例
 .;C:\Program Files\Java\mysql-connector-java-5.1.43-bin.jar;
