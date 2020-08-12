@@ -43,9 +43,9 @@ java DbSearch
 
 # SQL文
 ```SQL
-SELECT title,date, 'Yahoo Japan' AS site_name 
+SELECT title,date, 'Yahoo Japan' AS site_name -- 「site_name」という、テーブルには存在しない架空のカラムを作っています
 FROM test_news1 
-WHERE title LIKE '%str%'
+WHERE title LIKE '%str%' -- 「str」に標準入力のデータが入ります
 
 UNION ALL
 
@@ -54,7 +54,7 @@ FROM test_news2
 WHERE title LIKE '%str%'
 
 ORDER BY date DESC 
-LIMIT 50;
+LIMIT 50; -- 50件まで表示させています
 ```
 
 # ToDo
