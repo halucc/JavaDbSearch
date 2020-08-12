@@ -43,7 +43,8 @@ java DbSearch
 
 # SQL文
 ```SQL
-SELECT title,date, 'Yahoo Japan' AS site_name -- site_nameという、テーブルには存在しない架空のカラムを作っています
+-- site_nameという、テーブルには存在しない架空のカラムを作っています
+SELECT title,date, 'Yahoo Japan' AS site_name 
 FROM test_news1 
 WHERE title LIKE '%str%' -- 「str」に標準入力のデータが入ります
 
