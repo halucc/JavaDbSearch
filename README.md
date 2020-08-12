@@ -2,7 +2,17 @@
 ドキュメント（仮）
 
 # 【準備】JDBCドライバ（jarファイル）
-## Windows
+## Windows（環境変数へ設定）
+```
+.(ドット);（セミコロン）[フルパス];（セミコロン）
+
+.;E:\!mysql20200520\mysql-connector-java-5.1.43-bin.jar;
+
+//jarファイルは任意の場所に置いてください
+//例
+.;C:\Program Files\Java\mysql-connector-java-5.1.43-bin.jar;
+
+```
 
 ## Linux(CentOS)
 
