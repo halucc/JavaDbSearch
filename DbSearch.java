@@ -16,7 +16,7 @@ class DbSearch {
             Statement stmt = con.createStatement();
 
             //SQL文
-            String mySql = "SELECT title,date, 'Yahoo Japan' AS site_name FROM test_news1 WHERE title LIKE " + "'%" + str + "%' UNION ALL SELECT title,date, 'NHK News' AS site_name FROM test_news2 WHERE title LIKE " + "'%" + str + "%' ORDER BY date DESC LIMIT 50";
+            String mySql = "SELECT title,date, 'Yahoo Japan' AS site_name FROM test_news1 WHERE title LIKE " + "'%" + str + "%'" + "UNION ALL SELECT title,date, 'NHK News' AS site_name FROM test_news2 WHERE title LIKE " + "'%" + str + "%'" + "ORDER BY date DESC LIMIT 50";
             
             // 3.リザルトセット（SQL文実行）
 	    	// executeQuery()メソッド
