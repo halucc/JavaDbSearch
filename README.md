@@ -41,9 +41,7 @@ java DbSearch
 #### Linux(CentOS)
 ![hoge](image/search02.png)
 
-# MySQL
-
-# SQL文解説
+# SQL文
 ```SQL
 SELECT title,date, 'Yahoo Japan' AS site_name 
 FROM test_news1 
