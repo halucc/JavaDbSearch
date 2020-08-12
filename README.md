@@ -20,6 +20,8 @@
 
 ## Linux(CentOS)
 
+- test
+
 # コンパイル
 ```Java
 //コンパイル
