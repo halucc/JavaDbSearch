@@ -1,6 +1,11 @@
 # JavaMySQLSearch
 ドキュメント（仮）
 
+# 【準備】JDBCドライバ（jarファイル）
+## Windows
+
+## Linux(CentOS)
+
 # 使用例
 #### Windows(PowerShell)
 ![hoge](image/search01.png)
@@ -11,8 +16,6 @@
 
 #### Linux(CentOS)
 ![hoge](image/search02.png)
-
-# JDBCドライバ（jarファイル）
 
 # MySQL
 
