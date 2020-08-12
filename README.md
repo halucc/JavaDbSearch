@@ -48,12 +48,15 @@ java DbSearch
 SELECT title,date, 'Yahoo Japan' AS site_name 
 FROM test_news1 
 WHERE title LIKE '%str%'
+
 UNION ALL
+
 SELECT title,date, 'NHK News' AS site_name 
 FROM test_news2 
 WHERE title LIKE '%str%'
+
 ORDER BY date DESC 
-LIMIT 50
+LIMIT 50;
 ```
 
 # ToDo
