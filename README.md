@@ -44,6 +44,17 @@ java DbSearch
 # MySQL
 
 # SQL文解説
+```SQL
+SELECT title,date, 'Yahoo Japan' AS site_name 
+FROM test_news1 
+WHERE title LIKE " + "'%" + str + "%' 
+UNION ALL 
+SELECT title,date, 'NHK News' AS site_name 
+FROM test_news2 
+WHERE title LIKE " + "'%" + str + "%' 
+ORDER BY date DESC 
+LIMIT 50
+```
 
 # ToDo
 - 設定ファイルの外部ファイル化
